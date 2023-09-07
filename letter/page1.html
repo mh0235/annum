@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀✉️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="font-size-2" id="letter"></p>
+    <script>
+        const letter = `🎀🎀🎀
+        Annum 
+        🎀🎀🎀
+
+        
+        🤒🤢😷
+        I know you haven't been feeling the best this week. Sucks that you have to deal with covid of all things right now. 
+        
+        🛫✈️🛬
+        But I'm glad you had the chance to enjoy your trip to LA though. It looked like you really enjoyed your weekend and I'm happy you were able to do all the things you planned to do despite your illness.
+
+        📹📷🤳
+        If you hadn't already noticed haha, I thrice replayed all your snaps and I'm grateful and happy for the fact that you took the time out to send them while you were busy with your friend.
+        
+        🤼‍♂️🗣🤲
+        I know we argued a little over the past week. I'm sorry if any of that stressed you out during your trip and at a time when you're not feeling so great. I'm glad that we found a way past all of that and pray that whatever happens is the best for both of us. Ameen.
+        
+        👩📝💊
+        Here's hoping that you start feeling better sooner rather than later and are back in top shape. InshaAllah.
+        
+        
+        Sincerely,
+        Haroon`;
+        
+        let index = 0;
+        window.onload = function() {
+            const elem = document.getElementById('letter');
+            const interval = setInterval(() => {
+                elem.innerText = letter.substr(0, index);
+                console.log(letter[index]);
+                index++;
+                if (index > letter.length) {
+                    clearInterval(interval);
+                }
+            }, 75);
+        }
+    </script>
+</body>
+</html>

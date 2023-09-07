@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀🎁</title>
+    <style>
+
+        img.bitmoji {
+            width: 256px;
+            height: 0px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .left {
+            animation: fade-in-left 1s ease;
+            translate: -256px 0px;
+            animation-fill-mode: forwards;
+        }
+
+        .right {
+            animation: fade-in-right 1s ease;
+            align-self: end;
+            translate: 256px 0px;
+            animation-fill-mode: forwards;
+        }
+
+        .center {
+            animation: fade-in-right 1s ease;
+            align-self: center;
+            translate: 256px 0px;
+            animation-fill-mode: forwards;
+        }
+
+        .margin {
+            animation: margin 1s ease;
+            display: block;
+            animation-fill-mode: forwards;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="column">
+        <img class="bitmoji delay-1 left" src="resources/hey.png">
+        <h1 class="delay-2">Hey there,</h1>
+        <h1 class="delay-3">🎀 Annum 🎀</h1>
+
+        <div class="margin"></div>
+
+        <img class="bitmoji delay-8 right" src="resources/hope.png">
+        <h1 class="delay-9 right">Hope you're doing well!</h1>
+
+        <div class="margin"></div>
+
+        <img class="bitmoji delay-14 left" src="resources/fly.png">
+        <h1 class="delay-15 left">I know you're flying to LA tomorrow so yay!</h1>
+
+        <div class="margin"></div>
+
+        <img class="bitmoji delay-20 right" src="resources/party.png">
+        <h1 class="delay-21 right">Hope you have a great time!</h1>
+
+        <div class="margin"></div>
+
+        <img class="bitmoji delay-26 left" src="resources/girlsnight.png">
+        <h1 class="delay-27 left">And have fun hanging out with your friend!</h1>
+     
+        <div class="margin"></div>
+     
+        <img class="bitmoji delay-32 right" src="resources/spooky.png">
+        <h1 class="delay-33 right">But remember that LA can be kinda shady...</h1>
+
+        <div class="margin"></div>
+
+        <img class="bitmoji delay-38 left" src="resources/staysafe.png">
+        <h1 class="delay-39 left">So stay sharp and safe!</h1>
+  
+        <div class="margin"></div>
+   
+        <img class="bitmoji delay-44 right" src="resources/callme.png">
+        <h1 class="delay-45 right">And if you're ever bored, I'm just a phone call away hehe.</h1>
+        <h1 class="delay-46 right">Just kidding!</h1>
+     
+        <div class="margin"></div>
+     
+        <img class="bitmoji delay-52 left" src="resources/award.png">
+        <h1 class="delay-53 left">But seriously, have fun in LA!</h1>
+
+        <div class="margin"></div>
+
+        <img class="bitmoji delay-58 right" src="resources/spa.png">
+        <h1 class="delay-59 right">Take your mind off of things and relax!</h1>
+       
+        <div class="margin"></div>
+       
+        <img class="bitmoji delay-64 left" src="resources/drive.png">
+        <h1 class="delay-65 left">Drive around the scenic oceanside!</h1>
+       
+        <div class="margin"></div>
+       
+        <img class="bitmoji delay-70 right" src="resources/vacation.png">
+        <h1 class="delay-71 right">Walk along the amazing beaches!</h1>
+        
+        <div class="margin"></div>
+        
+        <img class="bitmoji delay-76 left" src="resources/time.png">
+        <h1 class="delay-77 left">And just have an overall good time!</h1>
+        <br><br>
+        <h1 class="delay-82 center">Okay enough of all that, now here's your gift!</h1>
+        <a style="align-self: center;" href="page2.html"><img class="bitmoji center delay-86" src="resources/gift.png"></a> 
+    </div>
+    <script>
+        setInterval(() => {
+            const scrollingElement = (document.scrollingElement || document.body);
+            scrollingElement.scrollTop = scrollingElement.scrollHeight;
+        }, 1000);
+    </script>
+</body>
+</html>

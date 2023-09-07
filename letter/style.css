@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@keyframes expanding {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Indie Flower';
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+body p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+body p::after {
+    content: '_';
+    padding: 0;
+    animation: blink infinite 0.5s ease;
+}
+
+.font-size-2 {
+    font-size: 2em;
+}
+
+.font-size-10 {
+    font-size: 10em;
+}
+
+.expanding {
+    animation: expanding 2s ease infinite;
+}

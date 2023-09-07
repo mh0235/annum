@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align: center; margin-top: 100px;">
+    <h1 id="text">Since I can't really get you any actual flowers right now, please accept these virtual flowers instead haha.</h1>
+    <div class="expanding">
+        <img id="img" width="256px" src="resources/flowers.png">
+    </div>
+    <script>
+        document.getElementById('img').addEventListener('click', click);
+        var clicked = false;
+        function click() {
+            if (clicked) return;
+
+            document.getElementById('img').src = 'resources/yay.png'
+            document.getElementById('text').innerHTML = 'Yay you accepted my flowers!';
+
+            clicked = true;
+        }
+    </script>
+</body>
+</html>
